@@ -39,6 +39,6 @@ public class Student {
 		}
 		//평균 계산
 		avg = (double)total / subjectList.size();
-		System.out.printf("총점: %d점, 평균: %2f점", total, avg);
+		System.out.printf("총점: %d점, 평균: %2f점", studentName, total, avg);
 	}
 }

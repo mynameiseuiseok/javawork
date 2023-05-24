@@ -11,8 +11,8 @@ public class Calendar1 {
 		System.out.println(cal.getCalendarType());
 		
 		// 날짜 - 월에 1을 더해줌(1월-0번 인덱스)
-		int year = cal.get(Calendar.YEAR);
-		int month = cal.get(Calendar.MONTH) + 1;
+		int year = cal.get(Calendar.YEAR); // 2023
+		int month = cal.get(Calendar.MONTH) + 1; // 5월
 		// 월이 10 미만이면 0을 포함하여 두 자리 문자로 표기하며 아니면 그대로 표기함
 		String strMonth = (month < 10) ? ("0" + month) : ("" + month);
 		int date = cal.get(Calendar.DATE);
