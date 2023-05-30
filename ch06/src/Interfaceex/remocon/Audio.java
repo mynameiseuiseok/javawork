@@ -1,7 +1,7 @@
 package Interfaceex.remocon;
 
-public class Television implements RemoteControl {
-	
+public class Audio implements RemoteControl{
+
 	// 필드
 	private int volume;
 
