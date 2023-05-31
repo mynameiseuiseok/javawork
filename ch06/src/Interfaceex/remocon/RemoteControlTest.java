@@ -7,6 +7,7 @@ public class RemoteControlTest {
 		RemoteControl rcTV = new Television();
 		RemoteControl rcAudio = new Audio();
 		
+		// 리모콘 사용
 		rcTV.turnOn();
 		rcTV.setVolume(15);
 		rcTV.setMute(true);		// 무음 처리

@@ -1,9 +1,14 @@
 package Interfaceex.remocon;
 
-public class Audio implements RemoteControl{
-
-	// 필드
+// RemoteControl, Searchable을 구현한 클래스
+public class SmartTV implements RemoteControl, Searchable {
+	
 	private int volume;
+	
+	@Override
+	public void search(String url) {
+		System.out.println(url + " 을 검색합니다");
+	}
 
 	@Override
 	public void turnOn() {
@@ -12,11 +17,12 @@ public class Audio implements RemoteControl{
 
 	@Override
 	public void turnOff() {
-		System.out.println("TV를 끕니다.");
+		System.out.println("TV를 켭니다.");
 	}
 
 	@Override
 	public void setVolume(int volume) {
+		// 볼륨의 크기 제한
 		if(volume > RemoteControl.MAX_VOLUME) {	// 최대 볼륨
 			this.volume = RemoteControl.MAX_VOLUME;
 		}
@@ -26,6 +32,6 @@ public class Audio implements RemoteControl{
 		else {
 			this.volume = volume;
 		}
-		System.out.println("현재 볼륨은 " + volume + "입니다.");
+		System.out.println("현재 TV 볼륨: " + this.volume);
 	}
 }
