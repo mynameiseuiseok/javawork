@@ -12,7 +12,11 @@ public class Book {
 		this.BookTitle = bookTitle;
 	}
 	
-	// 메서드 재정의
+	/* public void showInfo() {
+		System.out.println(bookNumber + ", " + bookTitle);
+	} */
+	
+	// toString() 재정의
 	@Override
 	public String toString() {
 		return bookNumber + ", " + BookTitle;
