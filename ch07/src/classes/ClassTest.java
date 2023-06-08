@@ -8,7 +8,7 @@ public class ClassTest {
 
 	public static void main(String[] args) throws ClassNotFoundException {
 		// String 클래스의 여러 가지 정보
-		Class class1 = Class.forName("java.lang.String");
+		Class class1 = Class.forName("java.lang.StringBuilder");
 		System.out.println(class1.getName());
 		
 		System.out.println("**** 생성자 정보 ****");
