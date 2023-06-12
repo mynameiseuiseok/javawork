@@ -12,6 +12,7 @@ public class WriteSample {
 
 		os.write(10);
 		os.write(20);
+		os.write(30);
 		
 		os.close();
 	}
