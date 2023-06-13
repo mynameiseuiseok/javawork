@@ -21,6 +21,10 @@ public class WriterTest {
 		fw.write(10);		// 줄바꿈(개행 문자)
 		fw.write(buf, 1, 4); // 1번 인덱스부터 4개 출력
 		
+		// String[] str = {"봄", "여름"};
+		fw.write("봄");
+		fw.write("여름");
+		
 		fw.close();
 		
 		System.out.println("수행 완료!");
